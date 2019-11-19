@@ -1,0 +1,53 @@
+package main;
+
+import bean.Persona;
+
+public class MainPersona {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// sin constructor " es mas claro
+		
+		Persona p1 = new Persona ();
+		
+		
+		
+		
+		p1.setNombre("Bud Spencer");
+		p1.setPeso(89);
+		p1.setEdad(89);
+		
+		// con constructor 
+		
+		
+		Persona p2= new Persona ("Terence", 67, 85);
+		
+		
+		// funcionamiento de stack y heap de la jvm
+		
+		Persona pAux =  p1;// Ambas apuntan a la misma direccion de memoria del objeto. tanto p1 como pAux 
+		
+		
+		
+		pAux.setEdad(33);// ahora tambien a cambiado la edad de p1
+		
+		
+		int numero = 50;// vaRIABLE PRIMITIVA (GUARDA EL VALOR)
+		cambiarEntero (numero);
+		System.out.println(numero);
+	}
+		
+		//---------METODOS PROPIOS 
+		public static void cambiarEdad(Persona  p) {
+			p.setEdad(45);		
+		}
+		public static void cambiarEntero(int numero) {// durante el ciclo de vida seria 100 durante la ejecucion
+			numero=100;		
+		}
+		
+		
+		
+	
+
+}

@@ -1,0 +1,28 @@
+package colecciones;
+
+public class MainColecciones {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		arrayList<String> listanombres=new arrayList <String>();
+		
+listaNombres.add("Mortadelo");
+
+listaNombres.add("filemon");
+listaNombres.add("bacterio");
+listaNombres.add("ofelia");
+listaNombres.add("Super intendente");
+
+
+
+
+
+
+
+
+
+	}
+
+}

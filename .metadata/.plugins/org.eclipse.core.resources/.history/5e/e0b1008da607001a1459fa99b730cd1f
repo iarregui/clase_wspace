@@ -1,0 +1,98 @@
+package colecciones;
+
+import java.util.ArrayList;
+
+import beans.Persona;
+
+public class MainColecciones {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		ArrayList<String> listaNombres=new ArrayList <String>();
+		
+		listaNombres.add("Mortadelo");
+		listaNombres.add("filemon");
+		listaNombres.add("bacterio");
+		listaNombres.add("ofelia");
+		listaNombres.add("Super intendente");
+		
+		
+		
+	System.out.println(listaNombres.get(0));//
+	System.out.println(listaNombres.get(1));//
+	System.out.println(listaNombres.get(2));//
+	System.out.println(listaNombres.get(3));//
+	System.out.println(listaNombres.get(4));//
+
+	// manera mala o poco usada de recorrer lista de ArraAYS 
+	System.out.println("************recorrer mal *****");//
+	
+		for ( int i = 0 ; i < listaNombres.size(); i++) {
+			
+				System.out.println(listaNombres.get(i) );
+		}
+
+// MANERA CORRECTA DE RECORREEL ALARRAYLIST   ---->FOR  EACH
+	
+// la primera parte : hay que ,eter una variable en el for del mismio tuiipo que la lista a recorrer ( valor) . en este caso reooro valores de tipo String 
+// la segunda parte es la lista que queremos recorrer con la variable valor
+		System.out.println("************recorrer bien *****");
+		for ( String valor: listaNombres) {
+	           System.out.println(valor);                      
+	}                         
+	                                 
+	      
+	// clases Wrapper o envoltorios 
+		
+		// si queremos un array de primitivos , no se pueden crar . los arrayList son solo para Objetos. HAY QUE HACERLES wRAPPING . 
+		
+	System.out.println("******array de enteros******");//
+	
+	//PARA ENTEROS 
+		 Integer entero = new Integer(4);
+		 
+		 Integer entero2 = 5;//autoboxing
+		 
+		 ArrayList <Integer> listaEnteros= new ArrayList<>();
+		 listaEnteros.add(1); //autoboxing
+		 listaEnteros.add(5); //autoboxing
+		 listaEnteros.add(10); //autoboxing
+		 listaEnteros.add (new Integer(15));
+		 
+		 for( Integer valorEnteros : listaEnteros) {
+	           System.out.println(valorEnteros);                      
+	}                         
+		 
+	// las otras clases se ddenominan como sus primitivas pero empezando en Mayuscula
+		 
+		 double prrmitivoDouble=6.5;
+		 Double objetoDouble=5.2;  //igual con las clasers Char, Integer etc.
+		 
+	
+	
+		 
+		 // 
+		 ArrayList <Persona>listaPersonas = new ArrayList<Persona>();
+		 Persona p1= new Persona ();
+		 p1.setNombre("Penelope");
+		 		
+		 p1.setEdad("45");
+		 
+		 Persona p2= new Persona ();
+		 p2.setNombre("lucia");
+		 p2.setEdad("25");
+		 
+		
+		 
+		 listaPersonas.add(p1);
+		 listaPersonas.add(p2);
+		 
+		 for( Persona p: listaPersonas ) {
+	           System.out.println(p.getNombre);
+	           System.out.println(p.getEdad);  
+		 
+		 }
+
+}

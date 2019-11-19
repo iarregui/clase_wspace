@@ -1,0 +1,36 @@
+package colecciones;
+
+import java.util.ArrayList;
+
+public class MainColecciones {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		ArrayList<String> listaNombres=new ArrayList <String>();
+		
+		listaNombres.add("Mortadelo");
+		listaNombres.add("filemon");
+		listaNombres.add("bacterio");
+		listaNombres.add("ofelia");
+		listaNombres.add("Super intendente");
+		
+		
+		
+	System.out.println(ListaNombres.get(0));//
+	System.out.println(ListaNombres.get(1));//
+	System.out.println(ListaNombres.get(2));//
+	System.out.println(ListaNombres.get(3));//
+	System.out.println(ListaNombres.get(4));//
+
+
+
+
+
+
+
+
+	}
+
+}

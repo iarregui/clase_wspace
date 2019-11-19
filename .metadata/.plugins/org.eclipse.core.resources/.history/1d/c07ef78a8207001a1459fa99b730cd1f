@@ -1,0 +1,44 @@
+package main;
+
+import beans.Direccion;
+import beans.Persona;
+import beans.Casa;
+
+public class MainInmobiliaria {
+
+	public static void main(String[] args) {
+		
+		// creo una persona y su direccion
+		
+		Persona p1= new Persona();
+		p1.setNombre ("haMortadelo");
+		p1.setPeso (50);
+		p1.setEdad (70);
+		
+		Direccion d1= new Direccion();
+		
+		d1.setTipoVia("calle");
+		d1.setNombreVia("gran via 2");
+		d1.setCiudad("madrid");
+		d1.setCp("28054");
+		
+		
+		p1.setDireccion(d1);
+		
+		
+		// creo la casa 
+		
+		Casa c1= new Casa();
+		
+		c1.setPrecio(120000);
+		c1.setPropietario(p1);
+		c1.setDireccion(d1);
+		
+		//creo la lista de habitaciones
+		
+		
+		
+
+	}
+
+}
